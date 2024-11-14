@@ -22,4 +22,7 @@ class person
 
 		friend ostream& operator<< (ostream& os, const person& p);
 		friend string& operator>> (string& s, const person& p);
+
+		string operator() () const { return _name; };	// function operator
+
 };

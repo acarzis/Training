@@ -34,21 +34,22 @@ int main()
 	p1.setphonenumber("5145559999");
 	p1.setcountry("Canada");
 
-	cout << p1 << endl;
+	cout << "person (with outstream overloaded): "  << p1 << endl;
 
 	tempstring >> p1;
-	cout << tempstring << endl;
+	cout << "string class >> overloaded for person: " << tempstring << endl;
 
 	// template use, example 1 - dynamic array
 	DynamicArray<int, 30> myarray;
 
 	// overload the output stream & string class
-	cout << myarray << endl;
+	cout << "dynamic array initialized to empty values: " << myarray << endl;
 	tempstring.clear();
 	tempstring >> myarray;
-
 	spdlog::info(tempstring);
 
+	// use the function operator
+	cout << "person(): " << p1() << endl;
 
 	// build an rpc server
 	ProcessingImpl myservice;
