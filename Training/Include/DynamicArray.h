@@ -2,6 +2,7 @@
 #include <iostream> 
 
 template<typename T, int size> 
+	requires std::integral<T> || std::floating_point<T>									// this is a concept (C++ 20)
 class DynamicArray
 {
 	private:
@@ -35,6 +36,7 @@ class DynamicArray
 };
 
 template<typename T, int size>
+	requires std::integral<T> || std::floating_point<T>
 inline const T& DynamicArray<T, size>::operator[](int index) const
 {
 	if (index >= size) {

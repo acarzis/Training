@@ -41,6 +41,8 @@ int main()
 
 	// template use, example 1 - dynamic array
 	DynamicArray<int, 30> myarray;
+	//	DynamicArray<person, 30> junk;	// illegal, won't compile
+
 
 	// overload the output stream & string class
 	cout << "dynamic array initialized to empty values: " << myarray << endl;
