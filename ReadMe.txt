@@ -48,7 +48,7 @@ Configure the vcpkg.json file as follows:
   "dependencies": [
     "protobuf",
     "grpc",
-    "protobuf[zlib]"
+    "zlib"                                  (this is probably not required)
   ]
 }
 
