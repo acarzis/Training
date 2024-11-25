@@ -57,7 +57,7 @@ int main()
 
 	// example, diamond problem & virtual inheritance
 	amphibian kermitFrog;
-	kermitFrog.breath();	// if amphibian::breath() was not present, this statement will throw an error
+	kermitFrog.breath();	// if amphibian::breath() was not present, this statement will throw an error without virtual inheritance
 	return 0;
 
 
