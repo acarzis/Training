@@ -7,6 +7,7 @@
 
 #include "../proto/service.pb.h"
 #include "../gRPC/service.grpc.pb.h"
+#include <amphibian.h>
 
 using namespace std;
 
@@ -52,6 +53,13 @@ int main()
 
 	// use the function operator
 	cout << "person(): " << p1() << endl;
+
+
+	// example, diamond problem & virtual inheritance
+	amphibian kermitFrog;
+	kermitFrog.breath();	// if amphibian::breath() was not present, this statement will throw an error
+	return 0;
+
 
 	// build an rpc server
 	ProcessingImpl myservice;

@@ -35,7 +35,7 @@ find_package(Protobuf CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 
 # generate the protobuf & grpc c++ code
-add_library(protolib proto/service.proto)
+add_library(protolib proto/service.proto "Source/animal.cpp" "Source/aquatic_animal.cpp" "Source/land_animal.cpp" "Source/amphibian.cpp" "Include/amphibian.h" "Include/animal.h" "Include/land_animal.h" "Include/aquatic_animal.h")
 target_link_libraries(protolib gRPC::grpc++)
 target_include_directories(protolib PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 get_target_property(grpc_cpp_plugin_location gRPC::grpc_cpp_plugin LOCATION)
@@ -46,7 +46,7 @@ PLUGIN "protoc-gen-grpc=${grpc_cpp_plugin_location}")
 
 
 # set project requirements & build project
-add_executable (Training "Source/Main.cpp" "Include/Main.h" "Include/Person.h" "Source/Person.cpp" "Include/DynamicArray.h" "proto/service.pb.h" "gRPC/service.grpc.pb.h")
+add_executable (Training "Source/Main.cpp" "Include/Main.h" "Include/Person.h" "Source/Person.cpp" "Include/DynamicArray.h" "proto/service.pb.h" "gRPC/service.grpc.pb.h" "Source/animal.cpp" "Source/aquatic_animal.cpp" "Source/land_animal.cpp" "Source/amphibian.cpp" "Include/amphibian.h" "Include/animal.h" "Include/land_animal.h" "Include/aquatic_animal.h")
 target_include_directories(Training PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Include/)
 target_include_directories(Training PUBLIC ${PKG_PACKAGES_LOCATION}/grpc_x64-windows/include)
 target_include_directories(Training PUBLIC ${PKG_PACKAGES_LOCATION}/abseil_x64-windows/include)

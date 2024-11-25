@@ -9,6 +9,8 @@ streams     - output stream converts object to a stream of characters
         
 templates   - evaluated at compile time. a template does not exist until we call it. the compiler creates the code based on usage.
 
+virtual inheritance - multiple inheritance 'diamond problem'
+
 grpc        - sample client & server
 
 
