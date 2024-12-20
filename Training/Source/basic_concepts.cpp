@@ -211,3 +211,44 @@ void example7_smartpointers()
 	bm3->Print();			// prints machine4
 }
 
+void example8_strings()
+{
+	cout << endl << "example 8...";
+
+	string temp = "This is an example of how to search and tokenize strings";
+
+	// search for 'example'
+	if (temp.find("example") != std::string::npos)
+	{
+		cout << "the string " << temp << " contains 'example'" << endl;
+	}
+
+	// tokenize the string
+	temp += " ";
+	bool done = false;
+	vector<string> words;
+	std::string::iterator start = temp.begin();
+	std::string::iterator end = temp.end();
+
+	while (!done)
+	{
+		std::string::iterator pos = std::find(start, end, ' ');
+		if (pos != end)
+		{
+			string word(start, pos);
+			words.push_back(word);
+			start = pos + 1;
+		}
+		else
+		{
+			done = true;
+		}
+	}
+
+	cout << "The string tokenized: " << endl;
+	for (vector<string>::iterator it = words.begin(); it < words.end(); ++it)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+}

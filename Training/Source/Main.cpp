@@ -85,6 +85,7 @@ int main()
 	example5_removeduplicates();
 	example6_reversestring();
 	example7_smartpointers();
+	example8_strings();
 
 	cout << endl; example1_inheritance();
 

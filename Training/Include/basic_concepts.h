@@ -9,7 +9,7 @@ void example4_copyconstructors();
 void example5_removeduplicates();
 void example6_reversestring();
 void example7_smartpointers();
-
+void example8_strings();
 
 
 struct retrieveValues
