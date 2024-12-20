@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Training",
+					"jsonFile" : "directory-Training-Debug-9be2b5dff8aa9951adbb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Training",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "grpcClient",
+					"jsonFile" : "directory-grpcClient-Debug-662c80782e1579b6d2a3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "grpcClient",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Global",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Training::@5d9329a7f071fc911e9b",
+					"jsonFile" : "target-Training-Debug-13be1321cbbfad79be21.json",
+					"name" : "Training",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "grpcClient::@3fd1ab9e63909ad65a01",
+					"jsonFile" : "target-grpcClient-Debug-6a28c49a239bddc1be2b.json",
+					"name" : "grpcClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "protolib::@5d9329a7f071fc911e9b",
+					"jsonFile" : "target-protolib-Debug-54f862f520b527b7059c.json",
+					"name" : "protolib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build",
+		"source" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

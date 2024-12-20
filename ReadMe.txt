@@ -1,6 +1,5 @@
 This project was a means for me to practice and improve upon c++ features that I do not use often
 
-
 constexpr   - functions of this type cannot modify non-local variables
                 constexpr is evaluated at compile time
 
@@ -12,6 +11,9 @@ templates   - evaluated at compile time. a template does not exist until we call
 virtual inheritance - multiple inheritance 'diamond problem'
 
 grpc        - sample client & server
+
+
+Update: I have started adding basic concepts to this work/collection in order to perhaps help others.
 
 
 
@@ -31,7 +33,6 @@ https://www.youtube.com/watch?v=1MuwAZJpqFk (gRPC)
 
 
 Project Setup:
-
 
 Powershell:
 

@@ -1,0 +1,9 @@
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/CMakeFiles/edit_cache.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/CMakeFiles/rebuild_cache.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training/CMakeFiles/protolib.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training/CMakeFiles/Training.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training/CMakeFiles/edit_cache.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training/CMakeFiles/rebuild_cache.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/grpcClient/CMakeFiles/grpcClient.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/grpcClient/CMakeFiles/edit_cache.dir
+D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/grpcClient/CMakeFiles/rebuild_cache.dir

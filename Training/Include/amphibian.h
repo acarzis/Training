@@ -6,5 +6,5 @@
 class amphibian : public land_animal, public aquatic_animal
 {
 public:
-	void breath();
+	// void breath();
 };

@@ -1,0 +1,611 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "grpcClient/grpcClient.exe"
+		},
+		{
+			"path" : "grpcClient/grpcClient.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"_find_package",
+			"find_package",
+			"find_dependency",
+			"add_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"grpcClient/CMakeLists.txt",
+			"Training/CMakeLists.txt",
+			"D:/DEVELOPMENT/vcpkg/packages/grpc_x64-windows/share/grpc/gRPCTargets.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/grpc_x64-windows/share/grpc/gRPCConfig.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/upb_x64-windows/share/upb/upb-targets.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/upb_x64-windows/share/upb/upb-config.cmake",
+			"C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/c-ares_x64-windows/share/c-ares/c-ares-targets.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/c-ares_x64-windows/share/c-ares/c-ares-config.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/grpc_x64-windows/share/grpc/modules/Findc-ares.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/abseil_x64-windows/share/absl/abslTargets.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/abseil_x64-windows/share/absl/abslConfig.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/protobuf_x64-windows/share/protobuf/protobuf-config.cmake",
+			"D:/DEVELOPMENT/vcpkg/packages/protobuf_x64-windows/share/protobuf/protobuf-targets.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 39,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 35,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 6
+			},
+			{
+				"file" : 4,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 25,
+				"parent" : 8
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 96,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 78,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 22,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 14
+			},
+			{
+				"file" : 6,
+				"parent" : 15
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 3,
+				"parent" : 16
+			},
+			{
+				"file" : 5,
+				"parent" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 60,
+				"parent" : 18
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 14,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 20
+			},
+			{
+				"file" : 10,
+				"parent" : 21
+			},
+			{
+				"command" : 6,
+				"file" : 10,
+				"line" : 18,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 23
+			},
+			{
+				"file" : 9,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 23,
+				"parent" : 25
+			},
+			{
+				"file" : 8,
+				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 60,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 29
+			},
+			{
+				"file" : 13,
+				"parent" : 30
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 7,
+				"parent" : 31
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 32
+			},
+			{
+				"file" : 12,
+				"parent" : 33
+			},
+			{
+				"command" : 4,
+				"file" : 12,
+				"line" : 32,
+				"parent" : 34
+			},
+			{
+				"file" : 11,
+				"parent" : 35
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 738,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 668,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 718,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 698,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 69,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 259,
+				"parent" : 36
+			},
+			{
+				"command" : 4,
+				"file" : 13,
+				"line" : 14,
+				"parent" : 31
+			},
+			{
+				"file" : 14,
+				"parent" : 43
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 70,
+				"parent" : 44
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -ZI"
+				},
+				{
+					"backtrace" : 46,
+					"fragment" : "/utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ABSL_CONSUME_DLL"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PROTOBUF_USE_DLLS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training"
+				},
+				{
+					"backtrace" : 47,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/grpc_x64-windows/include"
+				},
+				{
+					"backtrace" : 48,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/abseil_x64-windows/include"
+				},
+				{
+					"backtrace" : 49,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/protobuf_x64-windows/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/upb_x64-windows/include/upb/reflection/stage0"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/upb_x64-windows/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/re2_x64-windows/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/zlib_x64-windows/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/c-ares_x64-windows/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/DEVELOPMENT/vcpkg/packages/openssl_x64-windows/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "protolib::@5d9329a7f071fc911e9b"
+		}
+	],
+	"id" : "grpcClient::@3fd1ab9e63909ad65a01",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -ZI",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "Training\\protolib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\grpc_x64-windows\\debug\\lib\\grpc++.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\grpc_x64-windows\\debug\\lib\\grpc.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\upb_x64-windows\\debug\\lib\\upb.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\utf8-range_x64-windows\\debug\\lib\\utf8_range.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\re2_x64-windows\\debug\\lib\\re2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\zlib_x64-windows\\lib\\zlib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\c-ares_x64-windows\\debug\\lib\\cares.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "iphlpapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\grpc_x64-windows\\debug\\lib\\gpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_internal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_reflection.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_config.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_program_name.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_private_handle_accessor.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_commandlineflag.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_commandlineflag_internal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\absl_flags_marshalling.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-ignore:4221",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\openssl_x64-windows\\lib\\libssl.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\openssl_x64-windows\\lib\\libcrypto.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\grpc_x64-windows\\debug\\lib\\address_sorting.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "wsock32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "crypt32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "gdi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\protobuf_x64-windows\\debug\\lib\\libprotobufd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\debug\\lib\\abseil_dll.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "grpcClient",
+	"nameOnDisk" : "grpcClient.exe",
+	"paths" : 
+	{
+		"build" : "grpcClient",
+		"source" : "grpcClient"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "grpcClient/Source/Main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

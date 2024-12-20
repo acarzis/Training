@@ -8,6 +8,12 @@
 #include "../proto/service.pb.h"
 #include "../gRPC/service.grpc.pb.h"
 #include <amphibian.h>
+#include "../Include/Templates/templates.h"
+#include "../Include/cpp20.h"
+#include "../Include/basic_concepts.h"
+
+#include <future>
+#include "inheritance.h"
 
 using namespace std;
 
@@ -56,18 +62,48 @@ int main()
 
 
 	// example, diamond problem & virtual inheritance
-	amphibian kermitFrog;
-	kermitFrog.breath();	// if amphibian::breath() was not present, this statement will throw an error without virtual inheritance
-	return 0;
+	amphibian kermitFrog;	// inherits from both land_animal & aquatic_animal who both inherit from animal
+	kermitFrog.breath();	// this statement will throw an error without virtual inheritance
 
 
 	// build an rpc server
+	/*
 	ProcessingImpl myservice;
 	grpc::ServerBuilder builder;
 	builder.AddListeningPort("0.0.0.0:9977", grpc::InsecureServerCredentials());
 	builder.RegisterService(&myservice);
 	std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
 	server->Wait();
+	*/
+
+
+	// some basic concepts
+	example1_templates();
+	example2_lambdas();
+	cout << endl; example3_functionpointers();
+	example4_copyconstructors();
+	example5_removeduplicates();
+	example6_reversestring();
+	example7_smartpointers();
+
+	cout << endl; example1_inheritance();
+
+
+	// playing with futures (async operations)
+	future<int> fut = async(launch::async, []() {
+		return 14;
+		});
+
+	future<string> fut2 = async(launch::async, []() {
+		return string("Angelo is running a test");
+		});
+
+	// in the background, there are promises with put commands for the equivalent get
+	cout << endl <<  "Future result: " << fut.get() << " result2: " << fut2.get() << endl;
+
+	// c++ 20 examples
+	cout << endl; example1_std_erase();
+	example2_format();
 
 	return 0;
 }

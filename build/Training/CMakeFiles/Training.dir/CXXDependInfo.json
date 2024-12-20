@@ -1,0 +1,31 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training",
+	"dir-cur-src" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/Training",
+	"dir-top-bld" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build",
+	"dir-top-src" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\DEVELOPMENT\\PROJECTs\\Visual Studio 2022\\CPP_Learning\\Training\\Training\\Include",
+		"Training",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\grpc_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\abseil_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\protobuf_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\upb_x64-windows\\include\\upb\\reflection\\stage0",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\upb_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\re2_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\zlib_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\c-ares_x64-windows\\include",
+		"D:\\DEVELOPMENT\\vcpkg\\packages\\openssl_x64-windows\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/DEVELOPMENT/PROJECTs/Visual Studio 2022/CPP_Learning/Training/build/Training/CMakeFiles/Training.dir"
+}
