@@ -150,9 +150,8 @@ void example5_removeduplicates()
 
 	cout << endl;
 
-
 	// approach 2. sort the array traverse it comparing each element to the one after it
-
+	std::sort(arr.begin(), arr.end());
 }
 
 

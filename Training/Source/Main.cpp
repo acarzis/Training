@@ -88,6 +88,8 @@ int main()
 	example8_strings();
 
 	cout << endl; example1_inheritance();
+	cout << endl; example2_inheritance();
+	cout << endl; example3_inheritance();
 
 
 	// playing with futures (async operations)

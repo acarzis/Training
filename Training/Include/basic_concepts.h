@@ -45,7 +45,7 @@ public:
 
 	bettermachine() {};
 
-	// copy constructor
+	// copy constructor - called mainly when a new object is created from an existing object
 	bettermachine(bettermachine& m)
 	{
 		machineName = new char[20];
