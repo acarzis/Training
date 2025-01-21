@@ -1,18 +1,20 @@
 ﻿#include <grpcpp/grpcpp.h>
+#include <future>
 
 #include "../Include/Main.h"
 #include "../Include/Person.h"
-#include "../Include/DynamicArray.h"
+#include "../Include/Templates/DynamicArray.h"
+#include "../Include/Templates/MyVector.h"
+#include "../Include/Templates/Stack.h"
 #include "../Include/spdlog/spdlog.h"
 
 #include "../proto/service.pb.h"
 #include "../gRPC/service.grpc.pb.h"
-#include <amphibian.h>
 #include "../Include/Templates/templates.h"
 #include "../Include/cpp20.h"
 #include "../Include/basic_concepts.h"
 
-#include <future>
+#include "amphibian.h"
 #include "inheritance.h"
 
 using namespace std;
@@ -50,16 +52,43 @@ int main()
 	DynamicArray<int, 30> myarray;
 	//	DynamicArray<person, 30> junk;	// illegal, won't compile
 
-
 	// overload the output stream & string class
 	cout << "dynamic array initialized to empty values: " << myarray << endl;
 	tempstring.clear();
 	tempstring >> myarray;
 	spdlog::info(tempstring);
 
-	// use the function operator
-	cout << "person(): " << p1() << endl;
+	// template use, example 2 - MyVector, a variation of DynamicArray
+	MyVector<string> mystringvector(5);
+	MyVector<int> myintvector(5);
 
+	for (string s : mystringvector)
+		cout << s << '\n';
+
+	// using the max template function
+	cout << "Max(6, 7.2): " << ::max(6, 7.2) << endl;
+	cout << "Max2(6, 7.2): " << ::max2(6, 7.2) << endl;
+	cout << "Max2(6, 7): " << ::max2(6, 7) << endl;
+
+
+	// using the template class 'Stack'
+	::Stack<int> myIntStack;
+	myIntStack.push(7);
+	std::cout << "Top element from the Stack: "  << myIntStack.top() << endl;
+	std::cout << "Printing the int Stack via an out stream: " << myIntStack << endl;
+
+	::Stack<string> myStringStack;
+	myStringStack.push("Angelo");
+	std::cout << "Printing the string Stack via an out stream: " << myStringStack << endl;
+
+	// use the variable template
+	std::cout << "Speed of light (double): " << speed_of_light<double> << endl;
+	std::cout << "Speed of light (long): " << speed_of_light<long> << endl;
+
+
+	// use the function operator
+	cout << endl;
+	cout << "person(): " << p1() << endl;
 
 	// example, diamond problem & virtual inheritance
 	amphibian kermitFrog;	// inherits from both land_animal & aquatic_animal who both inherit from animal
@@ -105,8 +134,11 @@ int main()
 	cout << endl <<  "Future result: " << fut.get() << " result2: " << fut2.get() << endl;
 
 	// c++ 20 examples
-	cout << endl; example1_std_erase();
+	cout << endl; 
+	example1_std_erase();
 	example2_format();
+	example3_cmp_less(6, 7u);
+	example3_cmp_less(-1, 7u);
 
 	return 0;
 }

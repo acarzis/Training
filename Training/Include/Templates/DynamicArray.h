@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream> 
 
+// this is a class template
 template<typename T, int size> 
 	requires std::integral<T> || std::floating_point<T>									// this is a concept (C++ 20)
 class DynamicArray

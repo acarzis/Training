@@ -3,10 +3,7 @@
 #include <vector>
 #include <format>
 
-//import std;							// import module, c++ 20 only
-
 using namespace std;
-
 
 void example1_std_erase()
 {
@@ -26,29 +23,38 @@ void example1_std_erase()
 	}
 }
 
+// std::format is a means to replace the use of snprintf or formatting with iostreams. std::format is a variadic template
+// std::format combines the type safety of iostreams with the readability of printf
+// std::format supports locales for some of the data types via the 'L' specifier 
+// custom formatting is provided the std::formatter>T> tempalte and its 2 methods parse & format
 void example2_format()
 {
 	string t1 = "Angelo";
 	int t2 = 5;
 	double t3 = 6.89;
 
-	cout << std::format("{}, this is a formatted string", t1);
+	cout << std::format("{}, this is a formatted string", t1) << endl;
+
+	// let's define some variables
+	string s1 = "Angelo was here";
+	double s2 = 34.56;
+	double s3 = 4.2;
+
+	// > means right align, :20 occupy 20 positions
+	cout << std::format("{:20} {:>8.2f} {:>8.2f}, this is a formatted string ", s1, s2, s3) << endl;
+
+	// std::format returns a string
+	string s4 = std::format("{:20} {:>8.2f} {:>8.2f}, this is a formatted string ", s1, s2, s3);
+	cout << s4 << endl;
 }
 
-constexpr auto example3_constexpr()
-{
-	// this is evaluated at compile time
-	vector<int> vec{ 1, 2, 3, 4, 5 };
-	return vec;
-}
 
-void example4_cmpl_less()
+// std::cmp_less - arguments must be integer types
+void example3_cmp_less(int x, unsigned int y)
 {
-	int x{ -3 };
-	unsigned y{ 7 };
+	cout << std::format("example3_cmpl_less({}, {}) ", x, y) << endl;
 	if (std::cmp_less(x, y))
 		puts("true");
 	else
 		puts("false");
-
 }
