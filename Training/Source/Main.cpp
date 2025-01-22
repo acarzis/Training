@@ -85,6 +85,40 @@ int main()
 	std::cout << "Speed of light (double): " << speed_of_light<double> << endl;
 	std::cout << "Speed of light (long): " << speed_of_light<long> << endl;
 
+	// use the Stack template class for pointers
+	::Stack<int*> myIntPtrStack;
+	myIntPtrStack.push(new int{99});
+	int* t = new int(1);
+	*t = 77;
+	myIntPtrStack.push(t);
+	std::cout << "Integer on top of stack: " << *(myIntPtrStack.top()) << endl;
+	delete myIntPtrStack.pop();
+	std::cout << "Integer on top of stack: " << *(myIntPtrStack.top()) << endl;
+	delete myIntPtrStack.pop();
+
+	// the 2 parameter Stach template class
+	Stack2<int>	intStack;
+	intStack.push(7);
+	std::cout << "intStack (with default vector container), top: " << intStack.top() << endl;
+	intStack.pop();
+
+	// deque - double-ended queue. allows insertions/deletion at either end
+	Stack2<double, std::deque<double>> dblStack;
+	dblStack.push(7.9);
+	std::cout << "dblStack (with dequeue container), top: " << dblStack.top() << endl;
+	dblStack.pop();
+
+	// using Stack2<int> alias
+	intStackAlias ia;
+	ia.push(85);
+	std::cout << "intStackAlias (with vectorcontainer), top: " << ia.top() << endl;
+	ia.pop();
+
+	intStackAlias2 ia2;
+	ia2.push(55);
+	std::cout << "intStackAlias (with vectorcontainer), top: " << ia2.top() << endl;
+	ia2.pop();
+
 
 	// use the function operator
 	cout << endl;
